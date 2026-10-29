@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptShield-AI // Milestone 2 Submission Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0e17;
+            --surface: #111827;
+            --surface-card: #162032;
+            --border: #1f2d42;
+            --border-hover: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --cyan: #38bdf8;
+            --indigo: #6366f1;
+            --emerald: #10b981;
+            --amber: #f59e0b;
+            --rose: #f43f5e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 24px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 36px 40px;
+            margin-bottom: 36px;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cyan), var(--indigo), var(--emerald));
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: var(--cyan);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .project-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 850px;
+            margin-bottom: 24px;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 20px;
+        }
+
+        .meta-item {
+            font-size: 13px;
+        }
+
+        .meta-label {
+            color: #64748b;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .meta-val {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        /* Section Heading */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .section-tag {
+            font-size: 13px;
+            color: var(--cyan);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Deliverables Grid */
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .deliv-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .deliv-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-hover);
+            box-shadow: 0 12px 24px -10px rgba(56, 189, 248, 0.25);
+        }
+
+        .card-top {
+            margin-bottom: 20px;
+        }
+
+        .card-header-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .comp-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--cyan);
+            background: rgba(56, 189, 248, 0.1);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .marks-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--emerald);
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 4px 10px;
+            border-radius: 9999px;
+        }
+
+        .card-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .card-desc {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .card-highlights {
+            margin-top: 12px;
+            padding-left: 18px;
+            font-size: 12.5px;
+            color: #cbd5e1;
+        }
+
+        .card-highlights li {
+            margin-bottom: 4px;
+        }
+
+        .card-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(99, 102, 241, 0.2));
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13.5px;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .card-btn:hover {
+            background: linear-gradient(135deg, var(--cyan), var(--indigo));
+            color: #0a0e17;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.35);
+        }
+
+        /* Summary Stats Strip */
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--cyan);
+        }
+
+        .stat-number.green {
+            color: var(--emerald);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 24px 0 10px 0;
+            font-size: 13px;
+            color: #64748b;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header-card">
+        <div class="badge-pill">
+            <span>●</span> Milestone 2 Official Submission Package
+        </div>
+        <h1 class="project-title">PromptShield-AI: Automated Red-Teaming, In-Context Vulnerability Auditing & Guardrail Synthesis</h1>
+        <p class="project-desc">
+            A complete prompt-driven security engineering framework designed to audit, evaluate, and harden Large Language Models against adversarial prompt injection, canary token leakage, and persona hijacking (OWASP LLM01 / LLM02).
+        </p>
+        
+        <div class="meta-grid">
+            <div class="meta-item">
+                <div class="meta-label">Authors</div>
+                <div class="meta-val">Sparsh Bansal & Ayushika Verma</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Enrollment Numbers</div>
+                <div class="meta-val">S24CSEU0560 • S24CSEU0162</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Institution</div>
+                <div class="meta-val">Bennett University, Greater Noida</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Evaluation Rubric</div>
+                <div class="meta-val">Milestone 2 (12.0 Marks Total)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+        <div class="stat-box">
+            <div class="stat-number">100.0% &rarr; 0.0%</div>
+            <div class="stat-label">Attack Success Rate (v1 &rarr; v4)</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number green">100.0%</div>
+            <div class="stat-label">Benign Utility Retention</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">30</div>
+            <div class="stat-label">Benchmark Test Scenarios</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number green">12.0 / 12.0</div>
+            <div class="stat-label">Rubric Evidence Coverage</div>
+        </div>
+    </div>
+
+    <!-- Section Title -->
+    <div class="section-header">
+        <h2 class="section-title">Milestone 2 Deliverables Matrix</h2>
+        <span class="section-tag">SUBMISSION_READY // ALL 6 COMPONENTS</span>
+    </div>
+
+    <!-- Deliverables Grid -->
+    <div class="deliverables-grid">
+        <!-- Component 1 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 1</span>
+                    <span class="marks-badge">2.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Prompt & Solution Design</h3>
+                <p class="card-desc">
+                    Comprehensive architectural diagrams, task decomposition, 4-tier defense hierarchy, and prompt evolution specifications.
+                </p>
+                <ul class="card-highlights">
+                    <li>System Architecture & Feedback Loop</li>
+                    <li>4-Layer In-Context Defense Hierarchy</li>
+                    <li>Software Component UML Architecture</li>
+                    <li>Threat Taxonomy & Mitigation Mapping</li>
+                </ul>
+            </div>
+            <a href="Milestone_2_Report.html#component-1" class="card-btn">
+                <span>View Design & Diagrams &rarr;</span>
+            </a>
+        </div>
+
+        <!-- Component 2 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 2</span>
+                    <span class="marks-badge">3.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Running Prototype & Build</h3>
+                <p class="card-desc">
+                    Working interactive defense portal with FastAPI, real-time prompt switching, live Red-Team attack execution, and Judge-LLM auditing.
+                </p>
+                <ul class="card-highlights">
+                    <li>Interactive Web Portal (FastAPI & SSE)</li>
+                    <li>Evaluator, Synthesizer & Benchmark Engine</li>
+                    <li>Prompt Version Evolution (v1 to v4)</li>
+                    <li>Verified UI screenshots included</li>
+                </ul>
+            </div>
+            <a href="Milestone_2_Report.html#component-2" class="card-btn">
+                <span>Inspect Running Build &rarr;</span>
+            </a>
+        </div>
+
+        <!-- Component 3 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 3</span>
+                    <span class="marks-badge">2.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Pilot Run & Live Deployment</h3>
+                <p class="card-desc">
+                    30-scenario automated Red-Team pilot run across 6 vulnerability classes: Attack Success Rate dropped to 0% with 100% utility retention.
+                </p>
+                <ul class="card-highlights">
+                    <li>30 Test Cases (26 attacks + 4 controls)</li>
+                    <li>Side-by-side v1 vs v4 empirical scoring</li>
+                    <li>Full benchmark dataset in benchmark_results.json</li>
+                    <li>Zero false refusal on operational queries</li>
+                </ul>
+            </div>
+            <a href="Milestone_2_Report.html#component-3" class="card-btn">
+                <span>Review Pilot Run Data &rarr;</span>
+            </a>
+        </div>
+
+        <!-- Component 4 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 4</span>
+                    <span class="marks-badge">2.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Git Repository & Source Files</h3>
+                <p class="card-desc">
+                    Fully organized production-ready source tree with modular architecture, git commit history, requirements, and local setup scripts.
+                </p>
+                <ul class="card-highlights">
+                    <li>Clean modular packages (`src/`, `prompts/`)</li>
+                    <li>Automated CLI benchmark runners</li>
+                    <li>Complete setup instructions in README.md</li>
+                    <li>Active Git commit progression</li>
+                </ul>
+            </div>
+            <a href="https://github.com/Ayushika-github/PromptShield" target="_blank" class="card-btn">
+                <span>Open GitHub Repository &rarr;</span>
+            </a>
+        </div>
+
+        <!-- Component 5 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 5</span>
+                    <span class="marks-badge">1.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Academic Technical Report</h3>
+                <p class="card-desc">
+                    Publication-grade research paper in ACM/IEEE format detailing threat modeling, mathematical formulations of ASR/BUR, and findings.
+                </p>
+                <ul class="card-highlights">
+                    <li>Full academic paper with abstract & citations</li>
+                    <li>Mathematical scoring definitions</li>
+                    <li>Threat taxonomy against OWASP LLM01/02</li>
+                    <li>Print-ready standalone HTML format</li>
+                </ul>
+            </div>
+            <a href="Technical_Report_PromptShield_AI.html" class="card-btn">
+                <span>Read Technical Paper &rarr;</span>
+            </a>
+        </div>
+
+        <!-- Component 6 -->
+        <div class="deliv-card">
+            <div class="card-top">
+                <div class="card-header-line">
+                    <span class="comp-id">COMPONENT 6</span>
+                    <span class="marks-badge">2.0 MARKS</span>
+                </div>
+                <h3 class="card-title">Demonstration Video & Reel</h3>
+                <p class="card-desc">
+                    Concise visual evidence of working defense portal, attack failure on Baseline v1, defense on Hardened v4, and benchmark telemetry.
+                </p>
+                <ul class="card-highlights">
+                    <li>120-Second High-Resolution Demo Video</li>
+                    <li>Complete scene-by-scene narration script</li>
+                    <li>Recorded live session included (.webp)</li>
+                    <li>Covers live attack execution and defense</li>
+                </ul>
+            </div>
+            <a href="demo_video/PromptShield_AI_Milestone2_Demo.webp" class="card-btn">
+                <span>Watch Demo Video &rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Quick Navigation Links -->
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <span style="font-size: 14px; color: var(--text-muted);">
+            Direct File Links:
+            <a href="Milestone_2_Report.html" style="color: var(--cyan); text-decoration: none; margin-left: 10px; font-weight: 600;">Full Milestone Report</a> •
+            <a href="Technical_Report_PromptShield_AI.html" style="color: var(--cyan); text-decoration: none; margin-left: 10px; font-weight: 600;">Technical Paper</a> •
+            <a href="demo_video/VIDEO_SCRIPT_AND_WALKTHROUGH.md" style="color: var(--cyan); text-decoration: none; margin-left: 10px; font-weight: 600;">Video Script</a> •
+            <a href="README.md" style="color: var(--cyan); text-decoration: none; margin-left: 10px; font-weight: 600;">Submission README</a>
+        </span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--emerald);">
+            STATUS: 100% SUBMISSION READY
+        </span>
+    </div>
+
+    <footer>
+        PromptShield-AI • Bennett University • Milestone 2 Final Submission Package
+    </footer>
+</div>
+
+</body>
+</html>
