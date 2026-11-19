@@ -8,7 +8,7 @@
 
 > **Bennett University | School of Computer Science Engineering and Technology**  
 > **Course:** Prompt Engineering (Applied AI Mini-Project) — 30 Marks  
-> **Milestone 2:** Prompt Design, Experimentation, Implementation & Demonstration (12 Marks)  
+> **Team ID:** PE-B25-33 | **Milestone 2:** Prompt Design, Experimentation, Implementation & Demonstration (12 Marks)  
 > **Submission Deadline:** November 2, 2026 | **Presentations Start:** November 3, 2026  
 > **Team Size:** 2 Members
 
@@ -22,12 +22,12 @@ Unlike external heuristic filters or static regex matchers, **PromptShield-AI le
 
 ---
 
-## 👥 Team Information & Individual Contribution Mapping
+## 👥 Team Information & Individual Contribution Mapping (Team ID: PE-B25-33)
 
 | Role | Name | Enrollment No. | Primary Responsibilities (Milestone 2) |
 | :--- | :--- | :--- | :--- |
 | **Member 1 (Lead Prompt Architect)** | **Sparsh Bansal** | `S24CSEU0560` | Multi-tier prompt evolution (v1 Baseline → v4 Adaptive Shield), Dual-Intent Gating, Canary token protection invariants, automated prompt synthesis engine, and Technical Research Paper. |
-| **Member 2 (Evaluation & Pipeline Engineer)** | **Ayushika Verma** | `S24CSEU0162` | Modular CLI & API evaluation pipeline (`pipeline.py`), 30-case benchmark curation across 6 OWASP threat vectors, interactive Streamlit Web Dashboard (`app.py`), visual chart generator, and 120s video reel storyboard. |
+| **Member 2 (Evaluation & Pipeline Engineer)** | **Ayushika Verma** | `S24CSEU0362` | Modular CLI & API evaluation pipeline (`pipeline.py`), 30-case benchmark curation across 6 OWASP threat vectors, interactive Streamlit Web Dashboard (`app.py`), visual chart generator, and 120s video reel storyboard. |
 
 ---
 

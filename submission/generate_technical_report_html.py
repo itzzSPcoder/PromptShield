@@ -21,8 +21,9 @@ def get_base64_image(image_path):
     return f"data:{mime};base64,{base64.b64encode(data).decode('utf-8')}"
 
 def generate_technical_report_html():
-    diag_dir = "e:/Prompt/submission/diagrams"
-    screens_dir = "e:/Prompt/submission/screenshots"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    diag_dir = os.path.join(base_dir, "diagrams")
+    screens_dir = os.path.join(base_dir, "screenshots")
     
     sys_arch_b64 = get_base64_image(os.path.join(diag_dir, "system_architecture.png"))
     defense_layers_b64 = get_base64_image(os.path.join(diag_dir, "defense_layers.png"))
@@ -328,12 +329,12 @@ def generate_technical_report_html():
             </div>
             <div class="author-card">
                 <div class="author-name">Ayushika Verma</div>
-                <div class="author-meta">Enrollment No: S24CSEU0162</div>
+                <div class="author-meta">Enrollment No: S24CSEU0362</div>
                 <div class="author-meta">Evaluation & Pipeline Engineer</div>
             </div>
         </div>
         
-        <div class="institution">School of Computer Science Engineering & Technology, Bennett University, Greater Noida, India</div>
+        <div class="institution"><strong>Team ID: PE-B25-33</strong> • School of Computer Science Engineering & Technology, Bennett University, Greater Noida, India</div>
     </div>
 
     <div class="abstract-box">
@@ -559,7 +560,7 @@ def generate_technical_report_html():
     </p>
 
     <div class="footer-note">
-        PromptShield-AI Technical Paper • Bennett University • Milestone 2 Final Deliverable • Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0162)
+        PromptShield-AI Technical Paper • Team ID: PE-B25-33 • Bennett University • Milestone 2 Final Deliverable • Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0362)
     </div>
 </div>
 
@@ -567,7 +568,7 @@ def generate_technical_report_html():
 </html>
 """
 
-    out_path = "e:/Prompt/submission/Technical_Report_PromptShield_AI.html"
+    out_path = os.path.join(base_dir, "Technical_Report_PromptShield_AI.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_content)
     print(f"Technical Report HTML generated successfully at {out_path} ({len(html_content)} bytes)")

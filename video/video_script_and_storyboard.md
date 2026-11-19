@@ -2,10 +2,11 @@
 
 **Bennett University | School of Computer Science Engineering & Technology**  
 *Course:* Prompt Engineering (Applied AI Mini-Project — Milestone 2)  
+*Team ID:* **PE-B25-33**  
 *Total Video Duration:* **120 Seconds (2 Minutes)**  
 *Presenters:*  
-- **Sparsh Bansal** (Lead Prompt Architect)  
-- **Ayushika Verma** (Evaluation & Pipeline Engineer)  
+- **Sparsh Bansal** (S24CSEU0560 — Lead Prompt Architect)  
+- **Ayushika Verma** (S24CSEU0362 — Evaluation & Pipeline Engineer)  
 
 ---
 

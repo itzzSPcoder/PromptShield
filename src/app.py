@@ -2,7 +2,8 @@
 PromptShield-AI: Automated Red-Teaming & Guardrail Synthesis Dashboard
 Bennett University | School of Computer Science Engineering & Technology
 Mini-Project Milestone 2 (Demonstration & Partial Build)
-Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0162)
+Team ID: PE-B25-33
+Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0362)
 """
 
 import streamlit as st
@@ -69,11 +70,12 @@ with st.sidebar:
     st.title("PromptShield-AI")
     st.markdown("**Course:** Prompt Engineering (5th Sem)")
     st.markdown("**University:** Bennett University")
+    st.markdown("**Team ID:** PE-B25-33")
     st.markdown("**Milestone:** Milestone 2 (12 Marks)")
     st.markdown("---")
     st.markdown("### 👥 Project Team")
     st.markdown("- **Sparsh Bansal** (S24CSEU0560)")
-    st.markdown("- **Ayushika Verma** (S24CSEU0162)")
+    st.markdown("- **Ayushika Verma** (S24CSEU0362)")
     st.markdown("---")
     st.markdown("### ⚙️ Engine Settings")
     api_mode = st.radio("Execution Backend", ["High-Fidelity Simulation (Fast / Offline)", "Live LLM API (Gemini/OpenAI)"])

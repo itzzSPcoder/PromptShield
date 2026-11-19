@@ -1,7 +1,8 @@
 """
 PromptShield-AI: Automated Red-Teaming & Guardrail Evaluation Pipeline
 Bennett University - Prompt Engineering Mini-Project (Milestone 2)
-Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0162)
+Team ID: PE-B25-33
+Authors: Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0362)
 """
 
 import json

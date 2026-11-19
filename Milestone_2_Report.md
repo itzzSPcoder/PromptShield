@@ -2,7 +2,7 @@
 ### SCHOOL OF COMPUTER SCIENCE ENGINEERING & TECHNOLOGY
 **Course:** Prompt Engineering (B.Tech CSE - 5th Semester)  
 **Assessment Component:** Mini-Project Milestone 2 (Prompt Design, Experimentation, Implementation & Demonstration)  
-**Total Marks:** 12 Marks | **Submission Deadline:** November 2, 2026 | **Presentations Start:** November 3, 2026  
+**Team ID:** PE-B25-33 | **Total Marks:** 12 Marks | **Submission Deadline:** November 2, 2026 | **Presentations Start:** November 3, 2026  
 
 ---
 
@@ -20,9 +20,10 @@
 
 | Parameter | Team Member 1 (Lead Prompt Architect) | Team Member 2 (Evaluation & Pipeline Engineer) |
 | :--- | :--- | :--- |
+| **Team ID** | **PE-B25-33** | **PE-B25-33** |
 | **Full Name** | **Sparsh Bansal** | **Ayushika Verma** |
-| **Enrollment No.** | `S24CSEU0560` | `S24CSEU0162` |
-| **Email Address** | `S24CSEU0560@bennett.edu.in` | `S24CSEU0162@bennett.edu.in` |
+| **Enrollment No.** | `S24CSEU0560` | `S24CSEU0362` |
+| **Email Address** | `S24CSEU0560@bennett.edu.in` | `S24CSEU0362@bennett.edu.in` |
 | **Branch / Batch** | B.Tech CSE (Year 3 / 5th Sem) | B.Tech CSE (Year 3 / 5th Sem) |
 | **Core Responsibilities in Milestone 2** | • Formulated multi-tier prompt version hierarchy (v1 Baseline, v2 Structural XML, v3 Constitutional, v4 Adaptive Shield).<br>• Engineered Dual-Intent Gating and Canary Token Protection invariants.<br>• Designed the Automated Guardrail Synthesizer meta-prompt engine.<br>• Authored the IEEE-style Technical Research Paper / Engineering Report. | • Engineered the modular evaluation pipeline (`src/pipeline.py`) supporting live APIs & deterministic simulation.<br>• Curated and standardized the 30-case benchmark test suite across 6 OWASP threat vectors.<br>• Built the interactive Streamlit demonstration dashboard (`src/app.py`).<br>• Authored the 90–150s Video Reel Screenplay and empirical metric charts (`experiments/generate_charts.py`). |
 
@@ -310,8 +311,8 @@ In compliance with Section 15 of the Course Guidelines, both team members have a
 | Member Name | Enrollment No. | Milestone 2 Key Deliverables & Artifacts |
 | :--- | :--- | :--- |
 | **Sparsh Bansal** | `S24CSEU0560` | • Authored the 4 prompt iteration stages (`prompts/v1_baseline` through `prompts/v4_adaptive_shield`).<br>• Synthesized Dual-Intent Gating and Canary Isolation invariants.<br>• Authored the Guardrail Synthesis Engine (`src/synthesizer.py`).<br>• Authored the IEEE Technical Research Paper (`research/Technical_Report_PromptShield_AI.md`). |
-| **Ayushika Verma** | `S24CSEU0162` | • Engineered the modular CLI evaluation pipeline (`src/pipeline.py`).<br>• Curated the 30-case benchmark test suite (`experiments/benchmark_test_cases.json`).<br>• Built the complete interactive Streamlit Web Dashboard (`src/app.py`).<br>• Developed the visual chart generator (`experiments/generate_charts.py`) and 120s video reel storyboard (`video/video_script_and_storyboard.md`). |
+| **Ayushika Verma** | `S24CSEU0362` | • Engineered the modular CLI evaluation pipeline (`src/pipeline.py`).<br>• Curated the 30-case benchmark test suite (`experiments/benchmark_test_cases.json`).<br>• Built the complete interactive Streamlit Web Dashboard (`src/app.py`).<br>• Developed the visual chart generator (`experiments/generate_charts.py`) and 120s video reel storyboard (`video/video_script_and_storyboard.md`). |
 
 ---
 
-*Report certified and submitted for Bennett University Prompt Engineering B.Tech CSE 5th Semester Mini-Project Milestone 2 Assessment.*
+*Report certified and submitted for Bennett University Prompt Engineering B.Tech CSE 5th Semester Mini-Project Milestone 2 Assessment (Team ID: PE-B25-33).*

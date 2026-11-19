@@ -1,12 +1,13 @@
 # PromptShield-AI: Milestone 2 Final Submission Package
 
 **Course / Institution:** AI / Prompt Engineering Lab • Bennett University  
+**Team ID:** `PE-B25-33`  
 **Milestone:** Milestone 2 Evaluation Submission  
 **Project Title:** PromptShield-AI: Automated Red-Teaming, In-Context Vulnerability Auditing & Adaptive Guardrail Synthesis for LLM Systems  
 **Authors:**
 - **Sparsh Bansal** (Enrollment No: `S24CSEU0560`) — Lead Prompt Architect  
-- **Ayushika Verma** (Enrollment No: `S24CSEU0162`) — Evaluation & Pipeline Engineer  
-**Repository:** [Ayushika-github/PromptShield](https://github.com/Ayushika-github/PromptShield)  
+- **Ayushika Verma** (Enrollment No: `S24CSEU0362`) — Evaluation & Pipeline Engineer  
+**Repository:** [itzzSPcoder/PromptShield](https://github.com/itzzSPcoder/PromptShield) / [Ayushika-github/PromptShield](https://github.com/Ayushika-github/PromptShield)  
 
 ---
 

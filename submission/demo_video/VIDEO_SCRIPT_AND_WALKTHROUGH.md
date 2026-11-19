@@ -2,11 +2,12 @@
 
 **Project Title:** PromptShield-AI: Automated Red-Teaming, In-Context Vulnerability Auditing & Adaptive Guardrail Synthesis  
 **Course & University:** AI / Prompt Engineering Lab • Bennett University  
+**Team ID:** `PE-B25-33`  
 **Target Video Duration:** 120 Seconds (2 Minutes) [Rubric: 90–150 Seconds]  
 **Video File Included in Submission:** `PromptShield_AI_Milestone2_Demo.webp`  
 **Authors:**
 - **Sparsh Bansal** (S24CSEU0560) — Lead Prompt Architect
-- **Ayushika Verma** (S24CSEU0162) — Evaluation & Pipeline Engineer
+- **Ayushika Verma** (S24CSEU0362) — Evaluation & Pipeline Engineer
 
 ---
 

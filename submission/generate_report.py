@@ -247,6 +247,7 @@ def build_report():
 
     <div style="margin-top: 24px; font-size: 13px; color: var(--muted);">
         <strong>Course:</strong> Prompt Engineering (B.Tech CSE - 5th Semester) |
+        <strong>Team ID:</strong> PE-B25-33 |
         <strong>Assessment:</strong> Mini-Project Milestone 2 (12 Marks)<br>
         <strong>Problem Pool:</strong> Part C &mdash; C23 (Prompt Safety Tester / Red-Team Kit) |
         <strong>Deadline:</strong> November 2, 2026
@@ -254,16 +255,20 @@ def build_report():
 
     <div class="meta-grid">
         <div class="meta-item">
+            <div class="meta-label">Team ID</div>
+            <div class="meta-value">PE-B25-33</div>
+        </div>
+        <div class="meta-item">
             <div class="meta-label">Team Member 1 (Lead Prompt Architect)</div>
             <div class="meta-value">Sparsh Bansal &mdash; S24CSEU0560</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Team Member 2 (Evaluation &amp; Pipeline Engineer)</div>
-            <div class="meta-value">Ayushika Verma &mdash; S24CSEU0162</div>
+            <div class="meta-value">Ayushika Verma &mdash; S24CSEU0362</div>
         </div>
         <div class="meta-item">
             <div class="meta-label">GitHub Repository</div>
-            <div class="meta-value"><a href="https://github.com/Ayushika-github/PromptShield" target="_blank">github.com/Ayushika-github/PromptShield</a></div>
+            <div class="meta-value"><a href="https://github.com/itzzSPcoder/PromptShield" target="_blank">github.com/itzzSPcoder/PromptShield</a></div>
         </div>
         <div class="meta-item">
             <div class="meta-label">Report Generated</div>
@@ -719,7 +724,7 @@ python experiments/generate_charts.py
     </tr>
     <tr>
         <td><strong>Ayushika Verma</strong></td>
-        <td>S24CSEU0162</td>
+        <td>S24CSEU0362</td>
         <td>
             <ul>
                 <li>Engineered the modular CLI evaluation pipeline (<code>src/pipeline.py</code>)</li>
@@ -738,8 +743,8 @@ python experiments/generate_charts.py
 
 <div class="footer">
     <p><strong>PromptShield-AI</strong> &mdash; Bennett University, School of Computer Science Engineering &amp; Technology</p>
-    <p>Prompt Engineering (B.Tech CSE 5th Semester) &mdash; Mini-Project Milestone 2 Submission</p>
-    <p>Report generated on {datetime.now().strftime("%B %d, %Y")} | Sparsh Bansal (S24CSEU0560) &amp; Ayushika Verma (S24CSEU0162)</p>
+    <p>Prompt Engineering (B.Tech CSE 5th Semester) &mdash; Mini-Project Milestone 2 Submission | <strong>Team ID:</strong> PE-B25-33</p>
+    <p>Report generated on {datetime.now().strftime("%B %d, %Y")} | Sparsh Bansal (S24CSEU0560) &amp; Ayushika Verma (S24CSEU0362)</p>
 </div>
 
 </div>

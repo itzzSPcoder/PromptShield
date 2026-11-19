@@ -2,7 +2,7 @@
 ### SCHOOL OF COMPUTER SCIENCE ENGINEERING & TECHNOLOGY
 **Course:** Prompt Engineering (B.Tech CSE - 5th Semester)  
 **Assessment Component:** Mini-Project Milestone 1 (Problem Identification, Use-Case Definition & Prompt Proposal)  
-**Total Marks:** 8 Marks | **Date of Submission:** October 10, 2026  
+**Team ID:** PE-B25-33 | **Total Marks:** 8 Marks | **Date of Submission:** October 10, 2026  
 
 ---
 
@@ -21,9 +21,10 @@
 
 | Parameter | Team Member 1 (Lead Prompt Architect) | Team Member 2 (Evaluation & Pipeline Engineer) |
 | :--- | :--- | :--- |
+| **Team ID** | **PE-B25-33** | **PE-B25-33** |
 | **Full Name** | Sparsh Bansal | Ayushika Verma |
-| **Enrollment No.** | S24CSEU0560 | S24CSEU0162 |
-| **Email Address** | S24CSEU0560@bennett.edu.in | S24CSEU0162@bennett.edu.in |
+| **Enrollment No.** | S24CSEU0560 | S24CSEU0362 |
+| **Email Address** | S24CSEU0560@bennett.edu.in | S24CSEU0362@bennett.edu.in |
 | **Branch / Batch** | B.Tech CSE (Year 3 / 5th Sem) | B.Tech CSE (Year 3 / 5th Sem) |
 | **Core Responsibilities in Milestone 1** | • Formulated adversarial attack prompt taxonomy (Direct, Indirect, Persona-Switching, Delimiter Confusion).<br>• Designed baseline unhardened system prompts and target system configurations.<br>• Synthesized preliminary Constitutional AI guardrail prompts.<br>• Conducted literature review on Prompt Injection benchmarks. | • Designed structured JSON evaluator schema & judge-LLM evaluation prompts.<br>• Curated 20+ initial benchmark adversarial test scenarios.<br>• Executed initial baseline vulnerability tests and tabulated failure cases.<br>• Conducted faculty & industry expert feedback interviews and mapped actionable design changes. |
 

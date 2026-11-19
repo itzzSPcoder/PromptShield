@@ -2,7 +2,8 @@
 
 **Bennett University | School of Computer Science Engineering & Technology**  
 *Course:* Prompt Engineering (Applied AI Mini-Project — Milestone 2)  
-*Authors:* Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0162)  
+*Team ID:* `PE-B25-33`  
+*Authors:* Sparsh Bansal (S24CSEU0560) & Ayushika Verma (S24CSEU0362)  
 
 ---
 
