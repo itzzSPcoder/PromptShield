@@ -267,6 +267,10 @@ def build_report():
             <div class="meta-value">Ayushika Verma &mdash; S24CSEU0362</div>
         </div>
         <div class="meta-item">
+            <div class="meta-label">Live Cloud Prototype</div>
+            <div class="meta-value"><a href="https://promptshield.sparsh2005bansal.workers.dev/" target="_blank">promptshield.sparsh2005bansal.workers.dev</a></div>
+        </div>
+        <div class="meta-item">
             <div class="meta-label">GitHub Repository</div>
             <div class="meta-value"><a href="https://github.com/itzzSPcoder/PromptShield" target="_blank">github.com/itzzSPcoder/PromptShield</a></div>
         </div>

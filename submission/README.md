@@ -57,10 +57,12 @@ submission/
 - Open `submission/Technical_Report_PromptShield_AI.html` to inspect the academic preprint.
 - Open `submission/demo_video/PromptShield_AI_Milestone2_Demo.webp` to watch the video demonstration.
 
-### 2. Launch the Working Prototype Locally
+### 2. Launch the Working Prototype
+- **Live Public URL (Cloudflare Workers):** [https://promptshield.sparsh2005bansal.workers.dev/](https://promptshield.sparsh2005bansal.workers.dev/)
+- **Or Run Locally:**
 ```powershell
 # Navigate to project root
-cd e:\Prompt
+cd d:\oldCoding\Class\Prompt
 
 # Install dependencies
 pip install -r requirements.txt

@@ -93,8 +93,9 @@ cd PromptShield
 pip install -r requirements.txt
 ```
 
-### 2. Launch the Interactive Chatbot Defense Portal (FastAPI Web UI)
-Launches the web UI with live LLM testing, red-teaming presets, and real-time auto-hardening:
+### 2. Launch the Interactive Chatbot Defense Portal
+- **Live Cloudflare Deployment:** [https://promptshield.sparsh2005bansal.workers.dev/](https://promptshield.sparsh2005bansal.workers.dev/)
+- **Or Run Locally (FastAPI Web UI):**
 ```bash
 python src/server.py
 # Or with npm:
