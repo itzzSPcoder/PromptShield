@@ -3,3 +3,7 @@ __pycache__/
 .env
 .pytest_cache/
 .DS_Store
+temp_chrome/
+temp_recording.mp4
+demo_frames/
+test_*.png
