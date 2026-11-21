@@ -306,8 +306,7 @@ def main():
         # 2. Draw mouse cursor
         draw_cursor(draw, pos[0], pos[1], is_clicking=is_click, click_phase=click_phase)
         
-        # 3. Draw subtitle banner
-        draw_subtitle_bar(draw, sub, tag, out_w, out_h)
+        # (Subtitles completely removed per user request - 100% clean browser capture)
         
         # Convert to BGR for OpenCV
         frame_cv = cv2.cvtColor(np.array(frame_img), cv2.COLOR_RGB2BGR)
@@ -331,3 +330,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
