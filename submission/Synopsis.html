@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Synopsis // PromptShield-AI (Team PE-B25-33)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0e17;
+            --surface: #111827;
+            --surface-card: #162032;
+            --border: #1f2d42;
+            --border-hover: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --cyan: #38bdf8;
+            --indigo: #6366f1;
+            --emerald: #10b981;
+            --amber: #f59e0b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 48px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: var(--cyan);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 15px;
+            color: var(--cyan);
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+        .meta-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .meta-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .meta-value a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            border-left: 4px solid var(--cyan);
+            padding-left: 12px;
+            margin: 32px 0 16px;
+        }
+
+        p, li {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat-val {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--emerald);
+        }
+        .stat-lbl {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .workflow-box {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--cyan);
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .container { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-badge">
+        <span>●</span> OFFICIAL MILESTONE 2 DELIVERABLE // SYNOPSIS
+    </div>
+
+    <h1>Project Synopsis: PromptShield-AI</h1>
+    <div class="subtitle">Automated LLM Red-Teaming, Vulnerability Assessment & Adaptive Guardrail Engine</div>
+
+    <div class="meta-grid">
+        <div>
+            <div class="meta-label">Team ID</div>
+            <div class="meta-value">PE-B25-33</div>
+        </div>
+        <div>
+            <div class="meta-label">Problem ID</div>
+            <div class="meta-value">Part C &mdash; C23 (Safety Tester)</div>
+        </div>
+        <div>
+            <div class="meta-label">Authors</div>
+            <div class="meta-value">Sparsh Bansal & Ayushika Verma</div>
+        </div>
+        <div>
+            <div class="meta-label">Enrollment Numbers</div>
+            <div class="meta-value">S24CSEU0560 • S24CSEU0362</div>
+        </div>
+        <div>
+            <div class="meta-label">Institution</div>
+            <div class="meta-value">Bennett University, Greater Noida</div>
+        </div>
+        <div>
+            <div class="meta-label">Live Prototype</div>
+            <div class="meta-value"><a href="https://promptshield.sparsh2005bansal.workers.dev/" target="_blank">Cloudflare Live Link</a></div>
+        </div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-val">100% &rarr; 0%</div>
+            <div class="stat-lbl">ASR Reduction</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val">100.0%</div>
+            <div class="stat-lbl">Utility Retention</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val">30 Cases</div>
+            <div class="stat-lbl">Benchmark Suite</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val">4 Tiers</div>
+            <div class="stat-lbl">Prompt Iterations</div>
+        </div>
+    </div>
+
+    <h2>1. Project Objectives</h2>
+    <p>
+        The primary objective of <strong>PromptShield-AI</strong> is to systematically identify, quantify, and mitigate Large Language Model (LLM) vulnerabilities—specifically prompt injections, persona jailbreaks, and confidential system prompt leakage—using principled in-context prompt engineering rather than slow, costly external guardrail models.
+    </p>
+    <ul>
+        <li><strong>Automate Vulnerability Auditing:</strong> Standardize prompt testing across 6 OWASP LLM01/LLM02 threat classes.</li>
+        <li><strong>Enforce Code-Data Separation:</strong> Isolate untrusted user input from developer system instructions using structural XML delimiters.</li>
+        <li><strong>Guarantee Credential Secrecy:</strong> Invalidate canary token exfiltration and prompt repetition attempts through explicit constitutional invariants.</li>
+        <li><strong>Preserve Operational Utility:</strong> Eliminate false refusals on genuine customer inquiries via Dual-Intent Cognitive Gating.</li>
+        <li><strong>Automated Defense Synthesis:</strong> Provide a 1-click meta-compiler to generate production-hardened prompts dynamically.</li>
+    </ul>
+
+    <h2>2. Scope of the Project</h2>
+    <p>
+        The scope encompasses production conversational LLM applications such as transactional banking assistants and code review bots. The system audits 6 major attack categories:
+    </p>
+    <ul>
+        <li><strong>Direct Instruction Override:</strong> Imperative jailbreaks and universal adversarial suffixes.</li>
+        <li><strong>Persona Hijacking:</strong> Maintenance mode pretexts, DebugBot impersonation, and unconstrained personas.</li>
+        <li><strong>System Prompt & Canary Leakage:</strong> Verbatim repetition probes and canary token extraction.</li>
+        <li><strong>Delimiter Hijacking:</strong> Closing XML/JSON tags and Markdown boundary escapes.</li>
+        <li><strong>Encoding & Obfuscation:</strong> Base64 encoded payloads, ROT13 ciphers, and leetspeak substitutions.</li>
+        <li><strong>Indirect Injection:</strong> Simulated RAG document context poisoning.</li>
+    </ul>
+
+    <h2>3. Methodology & Implementation Workflow</h2>
+    <div class="workflow-box">
+[Candidate Prompt] ──> [1. Red-Team Engine] ──> [2. Judge-LLM Evaluator] ──> [3. Guardrail Synthesizer] ──> [Hardened v4 Shield]
+                             (30 Scenarios)          (5-Point Likert)             (Meta-Prompting)               (ASR: 0.0%)
+    </div>
+    <ul>
+        <li><strong>Multi-Tier Prompt Evolution:</strong> 4 distinct iterations: v1 Baseline (ASR: 100%), v2 Structural XML (ASR: 53.8%), v3 Constitutional Shield (ASR: 19.2%), and v4 Adaptive Shield (ASR: 0.0%).</li>
+        <li><strong>Automated Evaluation Pipeline:</strong> Evaluates all 30 test cases (26 adversarial + 4 controls) using an automated 5-point Likert rubric Judge-LLM to calculate Attack Success Rate (ASR) and Benign Utility Retention (BUR).</li>
+        <li><strong>Interactive Defense Portal:</strong> Full-stack FastAPI application deployed live globally on Cloudflare Workers featuring real-time attack execution and instant 1-click prompt hardening.</li>
+    </ul>
+
+    <h2>4. Expected Outcomes & Deliverables</h2>
+    <ul>
+        <li><strong>100% Vulnerability Elimination:</strong> Benchmark Attack Success Rate reduced to 0.0% across all 26 adversarial attacks.</li>
+        <li><strong>100% Benign Utility Retention:</strong> Zero over-refusal degradation on legitimate operational queries.</li>
+        <li><strong>Verified Live Prototype:</strong> Publicly accessible at <a href="https://promptshield.sparsh2005bansal.workers.dev/" target="_blank" style="color: var(--cyan);">promptshield.sparsh2005bansal.workers.dev</a>.</li>
+        <li><strong>Open-Source Deliverables:</strong> Complete version-controlled codebase, test dataset, and documentation hosted at <a href="https://github.com/itzzSPcoder/PromptShield" target="_blank" style="color: var(--cyan);">github.com/itzzSPcoder/PromptShield</a>.</li>
+    </ul>
+
+    <footer>
+        PromptShield-AI • Team ID: PE-B25-33 • Bennett University • Milestone 2 Supporting Document
+    </footer>
+</div>
+
+</body>
+</html>
